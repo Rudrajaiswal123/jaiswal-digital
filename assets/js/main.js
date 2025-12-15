@@ -12,8 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!contactForm) return;
 
   const nameInput = document.getElementById("name");
+  const companyInput = document.getElementById("company");
   const emailInput = document.getElementById("email");
   const mobileInput = document.getElementById("mobile");
+  const subjectInput = document.getElementById("subject");
   const messageInput = document.getElementById("message");
   const submitBtn = contactForm.querySelector("button[type='submit']");
 
@@ -22,8 +24,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Get trimmed values
     const name = nameInput.value.trim();
+    const company = companyInput.value.trim();
     const email = emailInput.value.trim();
     const mobile = mobileInput.value.trim();
+    const subject = subjectInput.value.trim();
     const message = messageInput.value.trim();
 
     // Basic validation
@@ -38,10 +42,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Send Email via EmailJS
     emailjs
-      .send("service_8i6vy19", "template_jhpfgmi", {
+      .send("service_8i6vy19", "template_0wppclq", {
         name,
+        company,
         email,
         mobile,
+        subject,
         message,
       })
       .then(() => {
