@@ -106,6 +106,7 @@ p {
 }
 
 .gradient-btn:hover {
+    background: linear-gradient(90deg, #ff7acb, #9b5cff);
     opacity: 0.9;
     color: #fff;
 }
@@ -114,6 +115,452 @@ p {
 .navbar-toggler {
     border-color: rgba(255, 255, 255, 0.2);
 }
+
+.hero-section {
+    min-height: 28rem;
+    background: url("../images/home-banner.png") center/cover no-repeat;
+    position: relative;
+}
+
+.hero-badge {
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  border: 1px solid #ff7adf;
+  color: #ff7adf;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 5, 25, 0.5);
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 6rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.hero-subtitle {
+    margin-top: 12px;
+    font-size: 1.5rem;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* ================================
+   TRUSTED / BRANDS SECTION
+================================ */
+.trusted-section {
+    padding: 80px 0;
+    background: radial-gradient(circle at center, #2a145f, #0b0616);
+}
+
+.trusted-box {
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.08),
+            rgba(255, 255, 255, 0.02));
+    border-radius: 16px;
+    padding: 60px 40px;
+    text-align: center;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.trusted-title {
+    color: #ffffff;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 40px;
+}
+
+.trusted-title span {
+    color: #ff7ac6;
+}
+
+.trusted-logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
+    align-items: center;
+}
+
+.trusted-logos img {
+    max-width: 120px;
+    margin: auto;
+    opacity: 0.6;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+}
+
+.trusted-logos img:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+.services-cards-section {
+    padding: 100px 0;
+    background: radial-gradient(circle at top, #24124d, #0b0616);
+}
+
+.section-tag {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #ff7ac6;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.section-title {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+
+.service-card {
+    height: 100%;
+    padding: 40px 35px;
+    border-radius: 18px;
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.06),
+            rgba(255, 255, 255, 0.02));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    transition: all 0.35s ease;
+}
+
+/* Hover & Active State */
+.service-card:hover,
+.service-card.active {
+    border-color: #b57cff;
+    /* one border only */
+    box-shadow: 0 2px 20px rgba(181, 124, 255, 0.35);
+    /* glow */
+    transform: translateY(-10px);
+}
+
+/* ======================================
+   ICON
+====================================== */
+.service-icon {
+    width: 52px;
+    height: 52px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.service-icon i {
+    font-size: 22px;
+    color: #ff7ac6;
+    transition: color 0.3s ease;
+}
+
+/* Icon color change on hover */
+.service-card:hover .service-icon i {
+    color: #b57cff;
+}
+
+/* ======================================
+   CARD CONTENT
+====================================== */
+.service-card h4 {
+    margin-bottom: 12px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.service-card p {
+    margin-bottom: 30px;
+    color: #cfcbd9;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* ======================================
+   BUTTON
+====================================== */
+.btn-service {
+    display: inline-block;
+    padding: 10px 26px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #b57cff, #ff7ac6);
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.btn-service:hover {
+    transform: translateY(-2px);
+}
+
+.how-it-works {
+  padding: 100px 0;
+  background: radial-gradient(circle at top, #3b136f, #12001f);
+  color: #fff;
+}
+
+.section-tag {
+  color: #ff7ac7;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.section-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.work-card {
+  position: relative;
+  padding: 40px 25px;
+}
+
+.work-card::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  right: 0;
+  width: 1px;
+  height: 80%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.col-lg-3:last-child .work-card::after {
+  display: none;
+}
+
+.icon-circle {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #ff7ac7, #b36bff);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.icon-circle i {
+  font-size: 32px;
+  color: #fff;
+}
+
+.work-card h5 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.work-card p {
+  font-size: 15px;
+  color: #cfc6dc;
+  margin-bottom: 20px;
+}
+
+.gradient-btn {
+  padding: 8px 24px;
+  border-radius: 30px;
+  font-size: 14px;
+  color: #fff;
+  background: linear-gradient(90deg, #b36bff, #ff7ac7);
+  border: none;
+}
+
+
+
+.gradient-btn:hover {
+background: linear-gradient(90deg, #ff7acb, #9b5cff);
+  opacity: 0.9;
+  color: #fff;
+}
+
+.testimonial-section {
+    padding: 100px 0;
+    background: radial-gradient(circle at top, #24124d, #0b0616);
+}
+
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 18px;
+    padding: 40px 30px;
+    text-align: center;
+    color: #fff;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Avatar */
+.testimonial-card .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #b57cff;
+}
+
+/* Text */
+.testimonial-card p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #cfcbd9;
+    margin-bottom: 20px;
+}
+
+.testimonial-card h5 {
+    margin-bottom: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.testimonial-card span {
+    font-size: 13px;
+    font-weight: 600;
+    color: #ff7ac6;
+}
+
+/* Indicators */
+.testimonial-indicators {
+    position: relative;
+    margin-top: 30px;
+}
+
+.testimonial-indicators button {
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background-color: #777;
+}
+
+.testimonial-indicators .active {
+    background-color: #ff7ac6;
+}
+
+.skills-section {
+    background: radial-gradient(circle at top left, #24124d, #0b0616);
+}
+
+/* Left Content */
+.skills-content {
+    padding: 90px 80px;
+    height: 100%;
+    color: #ffffff;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.04) 1px,
+            transparent 1px),
+        linear-gradient(90deg,
+            rgba(255, 255, 255, 0.04) 1px,
+            transparent 1px);
+    background-size: 60px 60px;
+}
+
+.skills-content h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 15px 0 20px;
+}
+
+.skills-desc {
+    color: #cfcbd9;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+/* Skill Item */
+.skill-item {
+    margin-bottom: 28px;
+}
+
+.skill-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Progress Bar */
+.progress {
+    height: 8px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(135deg, #b57cff, #ff7ac6);
+    border-radius: 10px;
+}
+
+.contact-form {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 16px;
+    color: #fff;
+}
+
+.contact-form h3 {
+    margin-bottom: 10px;
+}
+
+.contact-form p {
+    color: #cfcfcf;
+    font-size: 14px;
+}
+
+.contact-form .form-control {
+    background: rgba(255, 255, 255, 0.05);
+    border: none;
+    color: #fff;
+}
+
+.contact-form .form-control::placeholder {
+    color: #aaa;
+}
+
+.btn-gradient {
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(90deg, #9b5cff, #ff7acb);
+    border: none;
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(90deg, #ff7acb, #9b5cff);
+    opacity: 0.9;
+    color: #fff;
+}
+
+
 
 /* FOOTER */
 .footer {
