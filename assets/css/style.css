@@ -111,13 +111,29 @@ p {
     color: #fff;
 }
 
+.section-tag {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #ff7ac6;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.section-title {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
 /* MOBILE FIX */
 .navbar-toggler {
     border-color: rgba(255, 255, 255, 0.2);
 }
 
 .hero-section {
-    min-height: 28rem;
+    min-height: 30rem;
     background: url("../images/home-banner.png") center/cover no-repeat;
     position: relative;
 }
@@ -144,7 +160,7 @@ p {
 }
 
 .hero-title {
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: 700;
     color: #ffffff;
     letter-spacing: 1px;
@@ -213,23 +229,6 @@ p {
     padding: 100px 0;
     background: radial-gradient(circle at top, #24124d, #0b0616);
 }
-
-.section-tag {
-    display: inline-block;
-    margin-bottom: 10px;
-    color: #ff7ac6;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-
-.section-title {
-    color: #ffffff;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.3;
-}
-
 
 .service-card {
     height: 100%;
@@ -314,88 +313,6 @@ p {
     transform: translateY(-2px);
 }
 
-.how-it-works {
-  padding: 100px 0;
-  background: radial-gradient(circle at top, #3b136f, #12001f);
-  color: #fff;
-}
-
-.section-tag {
-  color: #ff7ac7;
-  font-weight: 600;
-  letter-spacing: 1px;
-  font-size: 14px;
-}
-
-.section-title {
-  font-size: 42px;
-  font-weight: 700;
-  margin-top: 10px;
-}
-
-.work-card {
-  position: relative;
-  padding: 40px 25px;
-}
-
-.work-card::after {
-  content: "";
-  position: absolute;
-  top: 10%;
-  right: 0;
-  width: 1px;
-  height: 80%;
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.col-lg-3:last-child .work-card::after {
-  display: none;
-}
-
-.icon-circle {
-  width: 80px;
-  height: 80px;
-  background: linear-gradient(135deg, #ff7ac7, #b36bff);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 20px;
-}
-
-.icon-circle i {
-  font-size: 32px;
-  color: #fff;
-}
-
-.work-card h5 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.work-card p {
-  font-size: 15px;
-  color: #cfc6dc;
-  margin-bottom: 20px;
-}
-
-.gradient-btn {
-  padding: 8px 24px;
-  border-radius: 30px;
-  font-size: 14px;
-  color: #fff;
-  background: linear-gradient(90deg, #b36bff, #ff7ac7);
-  border: none;
-}
-
-
-
-.gradient-btn:hover {
-background: linear-gradient(90deg, #ff7acb, #9b5cff);
-  opacity: 0.9;
-  color: #fff;
-}
-
 .testimonial-section {
     padding: 100px 0;
     background: radial-gradient(circle at top, #24124d, #0b0616);
@@ -410,6 +327,10 @@ background: linear-gradient(90deg, #ff7acb, #9b5cff);
     height: 100%;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.testimonial-card:hover{
+    border-color: #b57cff;
 }
 
 /* Avatar */
@@ -442,22 +363,6 @@ background: linear-gradient(90deg, #ff7acb, #9b5cff);
     color: #ff7ac6;
 }
 
-/* Indicators */
-.testimonial-indicators {
-    position: relative;
-    margin-top: 30px;
-}
-
-.testimonial-indicators button {
-    width: 1px;
-    height: 1px;
-    border-radius: 50%;
-    background-color: #777;
-}
-
-.testimonial-indicators .active {
-    background-color: #ff7ac6;
-}
 
 .skills-section {
     background: radial-gradient(circle at top left, #24124d, #0b0616);
@@ -648,4 +553,181 @@ background: linear-gradient(90deg, #ff7acb, #9b5cff);
 
 .footer-policy a:hover {
     color: #ff7acb;
+}
+
+/* =====================================
+   RESPONSIVE DESIGN FIXES
+===================================== */
+
+/* ---------- Large tablets & small laptops ---------- */
+@media (max-width: 1200px) {
+  .hero-title {
+    font-size: 4.5rem;
+  }
+
+  .trusted-title {
+    font-size: 28px;
+    width: 100% !important;
+  }
+}
+
+/* ---------- Tablets ---------- */
+@media (max-width: 992px) {
+
+  /* Header */
+  .logo {
+    width: 8rem;
+  }
+
+  /* Hero */
+  .hero-title {
+    font-size: 3.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  /* Section titles */
+  .section-title {
+    font-size: 30px;
+  }
+
+  /* Trusted */
+  .trusted-box {
+    padding: 40px 25px;
+  }
+
+  /* Services */
+  .service-card {
+    padding: 30px;
+  }
+
+  /* How it works */
+  .work-card::after {
+    display: none;
+  }
+
+  /* Skills */
+  .skills-content {
+    padding: 60px 40px;
+  }
+
+  .skills-content h2 {
+    font-size: 32px;
+  }
+
+  /* Footer */
+  .footer-logo {
+    width: 12rem;
+  }
+}
+
+/* ---------- Mobile Devices ---------- */
+@media (max-width: 768px) {
+
+  /* Navbar mobile dropdown */
+  .navbar-collapse {
+    background: #0f0520;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 10px;
+  }
+
+  .navbar-nav {
+    text-align: center;
+    gap: 12px;
+  }
+
+  /* Hero */
+  .hero-section {
+    min-height: auto;
+    padding: 60px 0;
+  }
+
+  .hero-title {
+    font-size: 2.4rem;
+    line-height: 1.2;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  /* Trusted logos */
+  .trusted-logos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  /* Services */
+  .services-cards-section {
+    padding: 70px 0;
+  }
+
+  /* How it works */
+  .icon-circle {
+    width: 65px;
+    height: 65px;
+  }
+
+  .icon-circle i {
+    font-size: 26px;
+  }
+
+  /* Testimonials */
+  .testimonial-card {
+    padding: 30px 20px;
+  }
+
+  /* Skills + form */
+  .skills-content {
+    padding: 50px 25px;
+  }
+
+  .contact-form {
+    margin-top: 30px;
+  }
+
+  /* Footer bottom */
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .footer-policy a {
+    margin: 0 10px;
+  }
+}
+
+/* ---------- Small Phones ---------- */
+@media (max-width: 480px) {
+
+  /* Hero */
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  /* Section titles */
+  .section-title {
+    font-size: 24px;
+  }
+
+  /* Buttons */
+  .gradient-btn,
+  .btn-service,
+  .btn-gradient {
+    padding: 8px 20px;
+    font-size: 13px;
+  }
+
+  /* Footer */
+  .footer-logo {
+    width: 10rem;
+  }
+
+  .footer-text {
+    font-size: 14px;
+  }
 }
