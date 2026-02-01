@@ -118,12 +118,10 @@
     color: #fff;
     text-decoration: none;
     font-weight: 600;
-    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .btn-discover:hover {
     background: linear-gradient(135deg, #ff7ac6, #b57cff);
-    transform: translateY(-2px);
 }
 
 /* ================================
@@ -167,14 +165,10 @@
 .trusted-logos img {
     max-width: 120px;
     margin: auto;
-    opacity: 0.6;
-    filter: grayscale(100%);
     transition: all 0.3s ease;
 }
 
 .trusted-logos img:hover {
-    opacity: 1;
-    filter: grayscale(0%);
     transform: scale(1.05);
 }
 
@@ -321,7 +315,7 @@
     width: 100%;
     border-radius: 14px;
     margin-bottom: 20px;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     transition: all 0.35s ease;
 }
 
@@ -372,9 +366,9 @@
 }
 
 
-.team-card.active img {
+/* .team-card.active img {
     filter: grayscale(0%);
-}
+} */
 
 /* ================================
    RESPONSIVE
@@ -410,17 +404,18 @@
         text-align: left;
         margin-top: 10px;
     }
+
     .hero-section {
-    min-height: auto;
-    padding: 70px 0;
-  }
+        min-height: auto;
+        padding: 70px 0;
+    }
 
-  .hero-title {
-    font-size: 2.2rem;
-  }
+    .hero-title {
+        font-size: 2.2rem;
+    }
 
-  .hero-subtitle {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
+    .hero-subtitle {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
 }
